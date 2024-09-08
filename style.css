@@ -1,0 +1,206 @@
+@font-face {
+    font-family: "robotic";
+    src: url(./assets/fonts/Kanit-ExtraLight.ttf);
+}
+
+@font-face {
+    font-family: "Suze";
+    src: url(./assets/fonts/SUSE-VariableFont_wght.ttf);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    max-width: 60px;
+    max-height: 60px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.listOption, .menuOption, .contactButton{
+    font-family: "Suze";
+    text-decoration: none;
+    color: white;
+    text-decoration: none;
+}
+
+.navLinks{
+    list-style: none;
+}
+
+.navLinks .listOption{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.navLinks .listOption .menuOption {
+    transition: all 0.2s ease;
+}
+
+.navLinks .listOption .menuOption:hover {
+    color: violet;
+
+}
+
+.contactButton{
+    padding: 9px 25px;
+    background-color: rgba(130, 100, 240, 0.479);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    
+};
+
+.contactButton:hover{
+    background-color: rgba(238, 130, 238,0.8);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: rgba(0, 0, 0, 0.65) ;
+    border-bottom: solid white ;
+    max-height: 90px;
+}
+
+
+h1{
+    font-family: Suze, sans-serif;
+    text-transform: uppercase;
+    font-size: 6rem;
+    color: white;
+    opacity: 0.75;
+    padding-top: 3%;
+    padding-left: 50%;
+    transition: all 0.8s ease-in-out;
+}
+
+h1:hover{
+    text-shadow: 
+    0 0 5px #b55cff, /* Ombre légère */
+    0 0 10px #b55cff, /* Ombre plus large */
+    0 0 15px #b55cff, /* Ombre encore plus large */
+    0 0 20px #b55cff, /* Ombre externe */
+    0 0 25px #b55cff; /* Ombre encore plus large */
+    opacity: 0.8;
+}
+
+body{
+    background-image: url(./assets/img/planet.jpg); 
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Assure que le body prend la hauteur complète de la fenêtre */
+    background-size: cover; /* L'image couvre tout l'écran */
+    background-position: center; /* L'image est centrée */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    background-attachment: fixed;
+   
+}
+
+h2{
+    letter-spacing: 2px;
+    text-align: center;
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+    font-family: "Dosis", sans-serif;
+    border-bottom: solid 2px;
+    width: 100%;
+}
+
+.paragrapheMars{
+    max-width: 350px;
+    height: auto;
+    font-family: "Suze";
+    font-size: 1.5rem;
+    margin-left: 2vw;
+    margin-top: 1vh;
+    color: white;
+    opacity: 0.6;
+    transition: 0.2s ease;
+    border: solid 2px rgb(123, 104, 238);
+    border-radius: 20px;
+    padding: 50px 30px;
+    padding-top: 15px;
+    box-shadow: 0 0 20px #843afa;   /* Ombre moyenne */
+    transition: all 0.8s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.paragrapheMars:hover{
+    box-shadow: 
+    0 0 20px #4400ff, 
+    0 0 40px #4400ff; 
+    display: inline-block;
+    opacity: 0.8;
+}
+
+#planet{
+    color: white;
+    font-size: 3.2rem;
+    position: absolute;
+    bottom: 15vh;
+    right: 3vw; 
+    font-family: 'Courier New', Courier, monospace;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+    "ELGR" 1,
+    "ELSH" 12.3;
+    opacity: 65%; 
+    transition: 3s;
+    position: fixed; 
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  .blinking {
+    animation: blink 1.5s infinite; /* 1.5 secondes par cycle, répétition infinie */
+    animation-delay: 2s; /* Démarre l'animation après 2 secondes */
+  }
+
+#bottomMenu{
+    list-style-type: none; /* Supprime les puces de la liste */
+    padding: 0; /* Supprime le padding par défaut de la liste */
+    display: flex; /* Utilise Flexbox pour aligner les éléments en ligne */
+    gap: 30px; /* Ajoute un espace entre les boutons */
+}
+
+a{
+    text-decoration: none;
+}  
+
+#bottomMenu li {
+    position: relative;
+    transform: translateX(74.5vw);
+}
+
+
+.bottomButton{
+    display: flex; 
+    background-color: rgba(130, 100, 240, 0.479);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    padding: 20px 26px; 
+    border: none;
+    font-size: 1rem;
+    color: white;
+    opacity: 0.7;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.bottomButton:hover{
+    opacity: 0.9;
+}

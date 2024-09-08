@@ -1,0 +1,57 @@
+@font-face {
+    font-family: "Suze";
+    src: url(./assets/fonts/SUSE-VariableFont_wght.ttf);
+}
+
+*{
+    box-sizing: border-box;
+    font-family: "Suze",sans-serif;
+    list-style: none;
+}
+
+body{
+    text-align: center;
+    margin: 0;
+    color: white;
+    min-height: 200vh;
+}
+
+.box{
+    border: 6px solid white;
+    transition: 0.25s ease;
+    background-color: black;
+    padding: 10px;
+}
+
+h1{
+    text-align: center;
+    
+}
+
+p{
+    visibility: hidden;
+    width: 240px;
+    margin: 10px auto 0;
+    transition: 0.6s ease;
+    transform: translateX(-50vw);
+}
+
+.questionBoxClick{
+    background-color: grey;
+    border-radius: 30px;
+    border: 6px dashed pink ;
+}
+.showResponse{
+    visibility: visible;
+    opacity: 1; 
+    transform: translateX(0);
+}
+
+.mouseMouv{
+    height: 50px;
+    width: 50px;
+    border: solid pink 2px;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
